@@ -95,6 +95,7 @@ if (platformJs) {
 		from webDir
 		into "web"
 		archiveName = "posgen.zip"
+		dependsOn build
 		dependsOn classes
 		dependsOn copyLicense
 		dependsOn assembleWeb
