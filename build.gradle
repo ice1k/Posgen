@@ -34,7 +34,7 @@ sourceSets {
 	main.kotlin.srcDirs += 'src/main'
 	if (platformJs) main.kotlin.srcDirs += 'src/js'
 	// testing
-	else test.kotlin.srcDirs += 'test'
+	else test.kotlin.srcDirs += 'test/junit'
 	main.resources.srcDirs += 'res'
 }
 
