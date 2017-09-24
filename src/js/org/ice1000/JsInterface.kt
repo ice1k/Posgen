@@ -18,7 +18,7 @@ class JsInterface(nodeCount: Int) : FrontStar(nodeCount) {
 	fun markImpl(userID: UserID): Boolean = super.nodeMark(userID)
 
 	@JsName("addNode")
-	fun addNodeImpl(userID: UserID, node: Node) = super.addNode(userID, mtf)
+	fun addNodeImpl(userID: UserID, node: Node) = super.addNode(userID, node)
 
 	@JsName("addNodeData")
 	fun addNodeDataImpl(userID: UserID, weight: Int, mark: Boolean) = super.addNode(userID, weight, mark)

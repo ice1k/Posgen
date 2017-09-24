@@ -1,7 +1,7 @@
 group 'org.ice1000'
 version '0.0.1'
 
-def runTestMode = true
+def runTestMode = false
 
 buildscript {
 	ext.kotlin_version = '1.1.4-3'
@@ -13,7 +13,7 @@ buildscript {
 	}
 }
 
-def platformJs = !runTestMode // || System.getenv("USER") != 'ice1000'
+def platformJs = !runTestMode || System.getenv("USER") != 'ice1000'
 
 if (platformJs) apply plugin: 'kotlin2js'
 else apply plugin: 'kotlin'
