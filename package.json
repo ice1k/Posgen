@@ -1,0 +1,9 @@
+{
+	"name": "Posgen",
+	"version": "0.0.1",
+	"description": "the core algorithm of a web spider",
+	"devDependencies": {
+	},
+	"dependencies": {
+	}
+}
