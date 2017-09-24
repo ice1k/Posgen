@@ -56,7 +56,7 @@ if (platformJs) {
 	def webDir = "$buildDir/web"
 
 	compileKotlin2Js {
-		kotlinOptions.outputFile = "$webDir/mtf.js"
+		kotlinOptions.outputFile = "$webDir/posgen.js"
 		kotlinOptions.moduleKind = "amd"
 		kotlinOptions.sourceMap = true
 	}
@@ -94,7 +94,7 @@ if (platformJs) {
 	task zipWeb(type: Zip) {
 		from webDir
 		into "web"
-		archiveName = "mtf.zip"
+		archiveName = "posgen.zip"
 		dependsOn classes
 		dependsOn copyLicense
 		dependsOn assembleWeb
