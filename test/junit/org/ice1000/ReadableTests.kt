@@ -9,10 +9,10 @@ class ReadableTests {
 	@Test
 	fun readableTest() {
 		val frontStar = FrontStar(3)
-		frontStar.addNode("akiris", Node(100, true))
-		frontStar.addNode("ice1000", Node(0, false))
-		frontStar.addRelation("akiris" to "ice1000") // use pair
-		frontStar.addRelation("akiris", "ice1000") // use two parameters
+		frontStar.addNode("1", Node(100, true))
+		frontStar.addNode("2", Node(0, false))
+		frontStar.addRelation("1" to "2") // use pair
+		frontStar.addRelation("2", "1") // use two parameters
 		frontStar.solve()
 	}
 }
