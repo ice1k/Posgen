@@ -7,6 +7,6 @@ build_script:
 #
 
 artifacts:
-  - path: build/distributions/mtf.zip
-    name: web.zip
+  - path: build/distributions/posgen.zip
+    name: Posgen
 #
